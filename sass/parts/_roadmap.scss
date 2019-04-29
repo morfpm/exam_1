@@ -15,6 +15,7 @@
   &__item{
     display: inline-block;
     text-align: center;
+    z-index: 2;
   }
 
   &__action{
@@ -29,6 +30,7 @@
 
 .symbol-color{
   &--blue{
+    //z-index: 10;
     color: $color-blue;
   }
 
@@ -41,20 +43,39 @@
   }
 }
 
-.ellips{
-  width: 200px;
-  height: 100px;
-  background: transparent;
-  -moz-border-radius: 100px / 50px;
-  -webkit-border-radius: 100px / 50px;
-  border-radius: 100px / 50px;
-  border: 1px dotted $color-dots;
+.shapes{
+  display: inline-block;
+  position: absolute;
+}
 
-  //position: relative;
-  //top: -50px;
-  //width: 24vw;
-  //height: 12vw;
-  //background: transparent;
-  //border-radius: 24vw/12vw;
-  //border: 1px dotted $color-dots;
+svg{
+  top: 45px;
+  position: relative;
+}
+
+.empty__rings{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.ring{
+
+  &--center{
+    @include empty-ring($color-dark);
+    left: 346px;
+    top: 100px;
+  }
+
+  &--left{
+    @include empty-ring($color-dark);
+    left: -18px;
+    top: 100px;
+  }
+
+  &--right{
+    @include empty-ring($color-dark);
+    left: 710px;
+    top: 100px;
+  }
 }

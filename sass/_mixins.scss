@@ -29,3 +29,13 @@
   padding: $paddings;
   background: linear-gradient(45deg, #496bfe 37%, #5474fd 37%);
 }
+
+@mixin empty-ring($bg-color){
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  background-color: $bg-color;
+  z-index: 1;
+}

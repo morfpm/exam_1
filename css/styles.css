@@ -5,6 +5,9 @@
 .layout-symbol {
   font-size: 60px; }
 
+span {
+  z-index: 5; }
+
 h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 48px;
@@ -228,7 +231,8 @@ h5 {
     list-style: none; }
   .roadmap__item {
     display: inline-block;
-    text-align: center; }
+    text-align: center;
+    z-index: 2; }
   .roadmap__action {
     font-size: 36px;
     line-height: 26px;
@@ -246,14 +250,54 @@ h5 {
 .symbol-color--marine {
   color: #00a2ff; }
 
-.ellips {
-  width: 200px;
-  height: 100px;
-  background: transparent;
-  -moz-border-radius: 100px / 50px;
-  -webkit-border-radius: 100px / 50px;
-  border-radius: 100px / 50px;
-  border: 1px dotted #7b7b7b; }
+.shapes {
+  display: inline-block;
+  position: absolute; }
+
+svg {
+  top: 45px;
+  position: relative; }
+
+.empty__rings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  text-align: center; }
+
+.ring--center {
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  background-color: #333;
+  z-index: 1;
+  left: 346px;
+  top: 100px; }
+
+.ring--left {
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  background-color: #333;
+  z-index: 1;
+  left: -18px;
+  top: 100px; }
+
+.ring--right {
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  background-color: #333;
+  z-index: 1;
+  left: 710px;
+  top: 100px; }
 
 .place__info {
   background-repeat: no-repeat;
