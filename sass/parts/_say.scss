@@ -1,0 +1,66 @@
+.say {
+  background-image: url('#{$path-img}bg_5.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  //min-height: 100vh;
+  min-height: 735px;
+  color: $color_white;
+
+  &__title{
+  padding: 123px 0 95px;
+  }
+
+  &__author{
+    padding: 50px 0 37px;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 26px;
+    color: $color-author;
+    font-family: $fnt-logo;
+  }
+
+  &__text{
+    background-color: rgba(51, 51, 51, .9);
+    padding-left: 58px;
+  }
+
+  &__citata{
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-not-white;
+    font-family: $fnt-logo;
+    padding-bottom: 40px;
+    letter-spacing: -1px;
+    width: 560px;
+  }
+
+  &__data{
+    //display: inline-block;
+  }
+
+  &__img{
+    display: inline-block;
+    float: left;
+    width: 40%;
+  }
+
+  &__text{
+    display: inline-block;
+    float: left;
+    width: 54.7%;
+  }
+
+}
+
+.say-data__img{
+  //display: inline-block;
+}
+
+.fa-quote-left{
+  font-size: 20px;
+  position: relative;
+  top: -12px;
+  padding-right: 5px;
+  color: $color-blue;
+}

@@ -1,0 +1,23 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+// Common
+@import "common/general.scss";
+@import "common/typography.scss";
+
+//parts
+@import "parts/hero.scss";
+@import "parts/choose.scss";
+@import "parts/roadmap.scss";
+@import "parts/place.scss";
+@import "parts/footer.scss";
+@import "parts/say.scss";
+
+//components
+//@import "components/buttons.scss";
+
+//@import "parts/section__box";
+//@import "parts/we_do";
+//@import "parts/footer";
+//@import "parts/contact_us";
+//@import "parts/img-scroll";

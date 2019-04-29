@@ -1,0 +1,60 @@
+.roadmap{
+  display: flex;
+  justify-content: center;
+  height: 340px;
+  width: calc(100vw - 16px) ;
+  background-color: $color-dark;
+
+  &__list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__item{
+    display: inline-block;
+    text-align: center;
+  }
+
+  &__action{
+    font-size: 36px;
+    line-height: 26px;
+    color: $color-not-white;
+    font-family: $fnt-aleo;
+    font-weight: 400;
+    margin-top: 30px;
+  }
+}
+
+.symbol-color{
+  &--blue{
+    color: $color-blue;
+  }
+
+  &--pink{
+    color: $color-pink;
+  }
+
+  &--marine{
+    color: $color-marine;
+  }
+}
+
+.ellips{
+  width: 200px;
+  height: 100px;
+  background: transparent;
+  -moz-border-radius: 100px / 50px;
+  -webkit-border-radius: 100px / 50px;
+  border-radius: 100px / 50px;
+  border: 1px dotted $color-dots;
+
+  //position: relative;
+  //top: -50px;
+  //width: 24vw;
+  //height: 12vw;
+  //background: transparent;
+  //border-radius: 24vw/12vw;
+  //border: 1px dotted $color-dots;
+}

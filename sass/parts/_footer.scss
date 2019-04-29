@@ -1,0 +1,41 @@
+.footer{
+  height: 265px;
+  background-color: $color-darkest;
+  width: calc(100vw - 16px);
+  text-align: center;
+  color: $color_white;
+
+  &__social{
+    list-style: none;
+    color: $color-not-white;
+    padding-top: 21px;
+  }
+
+  &__logo{
+    padding: 120px 0 6px;
+  }
+
+  &__slogan{
+    @include slogan(16px, .07em);
+  }
+}
+
+.social__item{
+  display: inline-block;
+
+  &:not(:last-child) {
+    padding-right: 24px;
+  }
+
+}
+
+.social__link{
+  font-size: 15px;
+  color: $color_white;
+  text-decoration: none;
+
+  &:hover{
+    color: $color-blue;
+    cursor: pointer;
+  }
+}

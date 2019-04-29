@@ -1,0 +1,18 @@
+h1{
+  @include logo(48px);
+  text-align: center;
+}
+
+h2{
+  font-size: 36px;
+  line-height: 26px;
+  color: $color_white;
+  font-family: $fnt-aleo;
+  font-weight: 400;
+  text-align: center;
+}
+
+h5{
+  @include logo(24px);
+}
+

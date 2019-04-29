@@ -1,0 +1,129 @@
+.hero {
+  background-image: url('#{$path-img}bg_1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  color: $color_white;
+  overflow-x: hidden;
+
+  &__title {
+    padding-top: 25vh;
+  }
+
+  &__slogan {
+    @include slogan(22px, .31em);
+    text-align: center;
+    padding-top: 17px;
+  }
+
+  &__menu {
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    background-color: $color-blue;
+    width: calc(100vw - 16px);
+  }
+
+  &__scroller{
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 20%;
+    text-align: center;
+    color: $color_white;
+  }
+
+  &__scroll{
+    text-decoration: none;
+    padding-bottom: 15px;
+  }
+
+  &__search{
+    display: inline-block;
+    margin-top: 47px;
+    text-align: center;
+    border: 2px solid $color_white;
+    background-color: $color_white;
+    width: 650px;
+    color: $color_gray;
+    font-family: $fnt-logo;
+    height: 58px;
+  }
+
+}
+
+.menu__item{
+  display: inline-block;
+  font-family: $fnt-aleo;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover{
+    color: red;
+    cursor: pointer;
+  }
+}
+
+.menu__data{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.scroller__info{
+  font-family: $fnt-logo;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: .2em;
+  font-weight: 300;
+}
+
+.icon-arrow_down{
+  color: $color_white;
+  text-align: center;
+  font-size: 9px;
+}
+
+.search--center{
+  display: flex;
+  justify-content: space-between;
+}
+
+.search__input{
+  width: 495px;
+  border: transparent;
+  text-align: center;
+
+  &::placeholder{
+    font-size: 14px;
+    letter-spacing: .13em;
+    color: $color_gray;
+    font-family: $fnt-logo;
+    text-align: center;
+  }
+}
+
+.search__btn{
+  text-transform: uppercase;
+  background-color: $color-blue;
+  color: $color_white;
+  width: 150px;
+  border: none;
+  vertical-align: middle;
+  letter-spacing: 1px;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+.icon-magnifier--margin{
+  font-size: 20px;
+  vertical-align: middle;
+  padding-left: 10px;
+}

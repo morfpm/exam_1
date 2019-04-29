@@ -1,0 +1,31 @@
+@mixin logo($font-size) {
+  font-family: $fnt-logo;
+  font-size: $font-size;
+  line-height: 26px;
+  letter-spacing: .1em;
+  color: $color_white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@mixin slogan($font-size, $letter-spacing){
+  font-size: $font-size;
+  letter-spacing: $letter-spacing;
+  line-height: 26px;
+  color: $color_white;
+  font-family: $fnt-logo;
+  text-align: center;
+}
+
+@mixin button($paddings){
+  text-transform: uppercase;
+  color: $color_white;
+  font-size: 16px;
+  letter-spacing: .075em;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: $fnt-aleo;
+  border: none;
+  padding: $paddings;
+  background: linear-gradient(45deg, #496bfe 37%, #5474fd 37%);
+}

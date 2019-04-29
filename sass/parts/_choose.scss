@@ -1,0 +1,40 @@
+.choose{
+  background-image: url('#{$path-img}bg_2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: $color_white;
+  height: 685px;
+
+  &__title{
+    padding: 203px 0 60px;
+    text-align: left;
+  }
+
+  &__info{
+    font-size: 16px;
+    letter-spacing: .1em;
+    line-height: 26px;
+    font-weight: 300;
+    color: $color-not-white;
+    font-family: $fnt-logo;
+    padding-bottom: 25px;
+  }
+
+  &__images{
+    padding-top: 120px;
+  }
+
+  &__btn{
+    @include button(18px 40px);
+    margin-top: 20px;
+  }
+}
+
+.img__top{
+  margin-left: 65px;
+}
+
+.img__bottom{
+  margin-left: 190px;
+}
