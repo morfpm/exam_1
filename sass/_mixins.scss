@@ -33,7 +33,7 @@
 @mixin empty-ring($bg-color){
   position: absolute;
   display: inline-block;
-  border-radius: 50%;
+  //border-radius: 50%;
   width: 85px;
   height: 85px;
   background-color: $bg-color;

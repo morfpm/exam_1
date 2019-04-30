@@ -59,7 +59,7 @@ h5 {
     bottom: 0;
     height: 80px;
     background-color: #5474fd;
-    width: calc(100vw - 16px); }
+    width: 100%; }
   .hero__scroller {
     position: absolute;
     left: 50%;
@@ -217,7 +217,7 @@ h5 {
   -ms-flex-pack: center;
   justify-content: center;
   height: 340px;
-  width: calc(100vw - 16px);
+  width: 100%;
   background-color: #333; }
   .roadmap__list {
     display: -webkit-box;
@@ -269,7 +269,6 @@ svg {
 .ring--center {
   position: absolute;
   display: inline-block;
-  border-radius: 50%;
   width: 85px;
   height: 85px;
   background-color: #333;
@@ -280,7 +279,6 @@ svg {
 .ring--left {
   position: absolute;
   display: inline-block;
-  border-radius: 50%;
   width: 85px;
   height: 85px;
   background-color: #333;
@@ -291,7 +289,6 @@ svg {
 .ring--right {
   position: absolute;
   display: inline-block;
-  border-radius: 50%;
   width: 85px;
   height: 85px;
   background-color: #333;
@@ -344,7 +341,7 @@ svg {
 .footer {
   height: 265px;
   background-color: #232323;
-  width: calc(100vw - 16px);
+  width: 100%;
   text-align: center;
   color: #fff; }
   .footer__social {
